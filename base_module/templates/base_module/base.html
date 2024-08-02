@@ -1,0 +1,42 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static 'css/index.css' %}">
+    <title>index</title>
+</head>
+<body>
+    <section class="header">
+        <div class="nav_bar">
+            <ul class="nav_items">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Service</a>
+                <a href="#">Help</a>
+                <a href="#">About</a>
+            </ul>
+        </div>
+        <div class="search_bar">
+            <input type="text" placeholder="search">
+        </div>
+        <div class="login_bar">
+            <a href="#">Login</a>
+            <a href="#">SignUp</a>
+        </div>
+    </section>
+    <section class="main_body">
+        <h2>this is body</h2>
+        <div class="content">
+            {% block content %}{% endblock content%}
+        </div>
+    </section>
+    <section class="footer">
+        <h2>this is footer</h2>
+        <p> &#169; all rights reserved by 
+            <bdo dir="rtl">ramin</bdo></p>
+    </section>
+    
+</body>
+</html>
